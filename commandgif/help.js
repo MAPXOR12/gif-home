@@ -29,8 +29,8 @@ neon - sad - smoking
 animan - anime - cuople
 emoji
 
-**Links**
-**[Invite](https://discord.com/oauth2/authorize?client_id=806840212608909344&permissions=70346817&scope=bot) - [Server Support](https://discord.gg/BCHan3ZxZr)**
+**Links** <a:emoji_19:850624403293077504>
+** <a:emoji_1:848805449155215391>[Invite](https://discord.com/api/oauth2/authorize?client_id=815940940404359218&permissions=8&scope=bot) <a:emoji_13:850610633618489344> [Server Support](https://discord.gg/BCHan3ZxZr) <a:emoji_20:850624420102930444>**
 `)
     
 message.channel.send({embed});
