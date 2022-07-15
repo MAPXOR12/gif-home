@@ -109,7 +109,7 @@ client.elevation = message => {
 client.login(config.token)
 
 client.on("message", (message) => {
-	if(message.content === "PREFIX+test") {
+	if(message.content === "!test") {
 	 const embed = new discord.MessageEmbed()
 	 .setTitle("Effect Sataff")
 	 .setColor("RED");
