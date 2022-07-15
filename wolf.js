@@ -107,6 +107,30 @@ client.elevation = message => {
 };
 client.login(config.token)
 
+//------------------------ kakwolf Random Gif Pp -----------------------//
+//------------------------ kakwolf Random Gif Pp -----------------------//
+//------------------------ kakwolf Random Gif Pp -----------------------//
+
+client.on("userUpdate", async(Revenge, NYKS) => {
+  
+if(Revenge.avatarURL === NYKS.avatarURL) return;
+let RevengePP = NYKS.avatarURL.split("?")[0]
+
+const Kanal = client.channels.filter(Revenge => Revenge.name === 'random-gif' && Revenge.type === 'text').array().forEach(Nucceteere => {
+if (RevengePP.endsWith('gif')) {
+Nucceteere.send(new Discord.Attachment(RevengePP))
+}
+const Kanal2 = client.channels.filter(Revenge => Revenge.name === 'random-pp' && Revenge.type === 'text').array().forEach(Revenge => {
+if (!RevengePP.endsWith('gif')) {
+Revenge.send(new Discord.Attachment(RevengePP))
+}
+})
+})
+})
+
+
+//////////
+
 client.on("message", (message) => {
 	if(message.content === "!test") {
 	 const embed = new discord.MessageEmbed()
@@ -138,26 +162,6 @@ buttonClient.on("no", (inta) => {
 	inta.message.reply("WTF, shut up bitch")
 })
 
-//------------------------ kakwolf Random Gif Pp -----------------------//
-//------------------------ kakwolf Random Gif Pp -----------------------//
-//------------------------ kakwolf Random Gif Pp -----------------------//
-
-client.on("userUpdate", async(Revenge, NYKS) => {
-  
-if(Revenge.avatarURL === NYKS.avatarURL) return;
-let RevengePP = NYKS.avatarURL.split("?")[0]
-
-const Kanal = client.channels.filter(Revenge => Revenge.name === 'random-gif' && Revenge.type === 'text').array().forEach(Nucceteere => {
-if (RevengePP.endsWith('gif')) {
-Nucceteere.send(new Discord.Attachment(RevengePP))
-}
-const Kanal2 = client.channels.filter(Revenge => Revenge.name === 'random-pp' && Revenge.type === 'text').array().forEach(Revenge => {
-if (!RevengePP.endsWith('gif')) {
-Revenge.send(new Discord.Attachment(RevengePP))
-}
-})
-})
-})
 
 //------------------------ kakwolf Random Gif Pp -----------------------//
 //------------------------ kakwolf Random Gif Pp -----------------------//
