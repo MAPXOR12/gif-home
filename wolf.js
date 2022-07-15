@@ -4,6 +4,7 @@ const http = require('http');
 const express = require('express');
 const config = require('./config.json');
 const app = express();
+const buttons = require ('discord-buttons');
 const Discord = require('discord.js');
 const client = new Discord.Client();
 client.on('ready', async () => {
