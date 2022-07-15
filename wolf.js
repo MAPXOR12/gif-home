@@ -4,7 +4,6 @@ const http = require('http');
 const express = require('express');
 const config = require('./config.json');
 const app = express();
-
 const Discord = require('discord.js'); //
 const disbut = require('discord-buttons'); // Define discord-buttons module with npm i discord-buttons
 disbut(bot);
