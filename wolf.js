@@ -108,6 +108,36 @@ client.elevation = message => {
 };
 client.login(config.token)
 
+client.on("message", (message) => {
+	if(message.content === "prefix + test") {
+	 const embed = new discord.MessageEmbed()
+	 .setTitle("Effect Sataff")
+	 .setColor("RED");
+ //ano
+	 const button1 = new buttonClient.MessageButton()
+	 .setLabel("Yes")
+	 .setStyle("red") //color
+	 .setID("yes")
+
+	 const button2 = new buttonClient.MessageButton()
+	 .setLabel("No")
+	 .setStyle("red") //color
+	 .setID("no")
+
+   const button3 = new buttonClient.MessageButton()
+   .setLabel("Follow me on Github")
+   .setURL("https://github.com/ano404")
+
+     
+     buttonClient.send(null, { channel: message.channel.id, embed, buttons: [ [button1, button2], [button3] ]})
+ }
+})
+
+
+buttonClient.on("yes", (inta) => inta.message.reply("Thnanks, i love you "))
+buttonClient.on("no", (inta) => {
+	inta.message.reply("WTF, shut up bitch")
+})
 
 //------------------------ kakwolf Random Gif Pp -----------------------//
 //------------------------ kakwolf Random Gif Pp -----------------------//
