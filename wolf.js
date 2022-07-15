@@ -5,8 +5,9 @@ const express = require('express');
 const config = require('./config.json');
 const app = express();
 const Discord = require('discord.js'); //
-const disbut = require('discord-buttons'); // Define discord-buttons module with npm i discord-buttons
-disbut(bot);
+const discordButtons = require("discord-buttons");
+const buttonClient = new discordButtons(client)
+
 const client = new Discord.Client();
 client.on('ready', async () => {
    client.appInfo = await client.fetchApplication();
